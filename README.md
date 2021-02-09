@@ -4,7 +4,7 @@
 
 ```bash
 cd ~
-git clone git@github.com:manishprivet/dotfiles.git .dotfiles
+git clone git@github.com:manishprivet/dotfiles.git ~/.dotfiles
 ```
 
 ## Go into the folder and run the install script
