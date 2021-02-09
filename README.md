@@ -11,6 +11,6 @@ git clone git@github.com:manishprivet/dotfiles.git ~/.dotfiles
 
 ```bash
 cd .dotfiles
-chmod +x ./install.sh
-./install.sh
+find ~/.dotfiles -type f -iname "*.sh" -exec chmod +x {} \;
+~/.dotfiles/scripts/setup.sh
 ```
