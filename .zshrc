@@ -12,6 +12,7 @@ export PATH="$PATH:/home/manishprivet/development/flutter/bin"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="awesomepanda"
+# ZSH_THEME="apple"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,6 +111,10 @@ function gitp() {
     git push -u origin HEAD
 }
 
+function update_fork() {
+    git fetch upstream && git merge upstream/master master
+}
+
 export PATH=$PATH:/usr/local/go/bin
 export LANG=en_US.utf8
 export LC_CTYPE="en_US.utf8"
@@ -125,3 +130,24 @@ export LC_TELEPHONE="en_US.utf8"
 export LC_MEASUREMENT="en_US.utf8"
 export LC_IDENTIFICATION="en_US.utf8"
 export LC_ALL=en_US.utf8
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/manishprivet/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/manishprivet/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/manishprivet/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/manishprivet/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+export NVM_DIR="/home/manishprivet/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH=$PATH:$HOME/.cargo/bin
