@@ -151,3 +151,6 @@ export NVM_DIR="/home/manishprivet/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH=$PATH:$HOME/.cargo/bin
+
+export DENO_INSTALL="/home/manishprivet/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
