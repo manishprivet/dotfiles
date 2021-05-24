@@ -5,3 +5,6 @@
 
 # Get all upgrades
 sudo apt upgrade -y
+
+# Restore Gnome settings
+dconf load / < .dotfiles/gnome.conf
