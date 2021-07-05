@@ -11,8 +11,11 @@ export PATH="$PATH:/home/manishprivet/development/flutter/bin"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="awesomepanda"
-# ZSH_THEME="apple"
+ZSH_THEME="spaceship"
+# ZSH_THEME="jispwoso"
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_BATTERY_SHOW=always
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -107,7 +110,7 @@ bindkey '^ ' autosuggest-accept
 
 function gitp() {
     git add .
-    git commit -a -m "$*"
+    git cz -s
     git push -u origin HEAD
 }
 
@@ -163,3 +166,4 @@ export PATH=$PATH:$HOME/.cargo/bin
 export DENO_INSTALL="/home/manishprivet/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+fpath=($fpath "/home/manishprivet/.zfunctions")
