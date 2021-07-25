@@ -11,7 +11,7 @@ export PATH="$PATH:/home/manishprivet/development/flutter/bin"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="dracula"
 # ZSH_THEME="jispwoso"
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_PACKAGE_SHOW=false
@@ -167,3 +167,6 @@ export DENO_INSTALL="/home/manishprivet/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 fpath=($fpath "/home/manishprivet/.zfunctions")
+
+
+source ~/.zplug/init.zsh
